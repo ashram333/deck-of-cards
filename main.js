@@ -1,4 +1,4 @@
-// Arrays for suits and values
+// Variable arrays for suits and values
 const suits = ["spades", "diamonds", "clubs", "hearts"];
 const values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", '10', "J", "Q", "K"];
 
@@ -34,7 +34,7 @@ function shuffle() {
   renderDeck();
 }
 
-//Rendering cards
+//Function for rendering cards
 function renderDeck() {
   document.getElementById("deck").innerHTML = "";
 
@@ -54,6 +54,7 @@ function renderDeck() {
   }
 }
 
+// Function to load
 function load() {
   deck = getDeck();
   shuffle();
