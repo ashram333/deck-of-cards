@@ -1,0 +1,90 @@
+h1 {
+  font-size: 50px;
+}
+
+
+.deck {
+  width: 50%;
+  margin: 20px auto;
+  background: black;
+  border: solid 10px white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  padding: 10px;
+  border: solid 1px #808080;
+  background-color: white;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 14pt;
+  text-align: center;
+  color: black;
+  margin: 3px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+.card .value {
+  font-size: 15pt;
+  font-family: sans-serif;
+}
+
+.card .suit {
+  background-image: url("./resources/images/0f631eeb-6c4a-4bfd-9f86-e0a08ae8584b.png");
+  height: 100px;
+  width: 90px;
+}
+
+.card .diamonds {
+  background-position-y: 100px;
+}
+
+.card .hearts {
+  background-position-x: 90px;
+}
+
+.card .clubs {
+  background-position-x: 90px;
+  background-position-y: 100px;
+}
